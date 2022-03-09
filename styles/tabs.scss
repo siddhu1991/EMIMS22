@@ -1,0 +1,36 @@
+.MuiTabs-root.MuiTabs-vertical {
+  .MuiButtonBase-root {
+    align-items: flex-start;
+    margin-right: 20px;
+    align-self: flex-start;
+    margin-top: -2px;
+  }
+  .MuiButtonBase-root.pending {
+  }
+  .MuiButtonBase-root.inprogress {
+    color: #0e9f6e;
+  }
+  .MuiButtonBase-root.complete {
+    color: #0e9f6e;
+  }
+  .MuiButtonBase-root {
+    .MuiTouchRipple-root {
+      text-align: left;
+    }
+  }
+  .MuiButtonBase-root:not(:last-child)::after {
+    height: 28px;
+    width: 2px;
+    content: '';
+    top: 21px;
+    position: absolute;
+    left: 10px;
+    background-color: #919eab;
+  }
+  .MuiButtonBase-root.complete:not(:last-child)::after {
+    background-color: #0e9f6e;
+  }
+  .MuiTabs-indicator {
+    display: none;
+  }
+}

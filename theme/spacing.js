@@ -1,0 +1,1 @@
+export const LABEL_BOTTOM_SPACING = '10px';

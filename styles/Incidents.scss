@@ -1,0 +1,153 @@
+.incidents-add-edit {
+  .incidents-step1 {
+    .incident-category-root {
+      padding: 0 10%;
+    }
+    .incident-category {
+      margin-top: 30px;
+    }
+    .incident-category label {
+      padding: 25px 20px;
+      border: 1px solid #dedede;
+      border-radius: 10px;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    .incident-category label.checked {
+      border: 1px solid #0e9f6e;
+    }
+    .incident-category label svg {
+      display: none;
+    }
+    .incident-category label > span.MuiRadio-root::before {
+      content: '';
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      font-size: 28px;
+    }
+    .incident-category label#ng-feeding > span.MuiRadio-root::before {
+      background: url(https://api.iconify.design/fa-solid/hand-holding-medical.svg) no-repeat center center / contain;
+    }
+    .incident-category label.checked#ng-feeding > span.MuiRadio-root::before {
+      background: url(https://api.iconify.design/fa-solid/hand-holding-medical.svg?color=%230E9F6E) no-repeat center
+        center / contain;
+    }
+    .incident-category label#general > span.MuiRadio-root::before {
+      background: url(https://api.iconify.design/fa-solid/hand-holding-medical.svg) no-repeat center center / contain;
+    }
+    .incident-category label.checked#general > span.MuiRadio-root::before {
+      background: url(https://api.iconify.design/fa-solid/hand-holding-medical.svg?color=%230E9F6E) no-repeat center
+        center / contain;
+    }
+    .incident-category label#noo-patient > span.MuiRadio-root::before {
+      background: url(https://api.iconify.design/fa-solid/stethoscope.svg) no-repeat center center / contain;
+    }
+    .incident-category label.checked#noo-patient > span.MuiRadio-root::before {
+      background: url(https://api.iconify.design/fa-solid/stethoscope.svg?color=%230E9F6E) no-repeat center center /
+        contain;
+    }
+  }
+  .incidents-step2 {
+    .div_incident_date_time .MuiInputBase-root {
+      flex-direction: row-reverse;
+    }
+    .div_staff_users {
+      border: 1px solid rgba(145, 158, 171, 0.32);
+      border-radius: 8px;
+      height: 100px;
+      padding: 10px;
+    }
+    .div_staff_users > .MuiChip-root {
+      background-color: #ededed;
+      border-radius: 5px;
+      margin-right: 5px;
+    }
+    .patient_info {
+      background-color: #f9fafb;
+      border: 1px solid #ededed;
+      border-radius: 5px;
+      color: #637381;
+      padding: 10px 5px;
+      font-size: 14px;
+    }
+    .incident_type_info span {
+      padding: 30px;
+      margin-top: 25px;
+      font-size: 14px;
+      font-weight: normal;
+      background-color: #f9fafb;
+      border: 1px solid #ededed;
+      border-radius: 5px;
+    }
+    .incident_type_info span > svg {
+      font-size: 22px;
+      margin-right: 10px;
+    }
+    .patient_info .id {
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+    .patient_info .dob {
+      margin: 0px 20px;
+    }
+    .patient_info .MuiAvatar-root {
+      height: 100%;
+      width: 100%;
+      border-radius: 8px;
+    }
+    .patient_info .section3 {
+      margin-top: 20px;
+    }
+    .patient_info .section3 a {
+      color: blue;
+    }
+    .patient_info .section4 {
+      position: relative;
+      right: 0;
+    }
+    .patient_info .section4 .remove {
+      position: relative;
+      right: -5px;
+      top: -8px;
+    }
+    .patient_info .section4 .top_info {
+      position: absolute;
+      right: 0px;
+      top: -30px;
+    }
+    .patient_info .section4 .top_info > svg {
+      transform: rotate(40deg);
+    }
+    .patient_info .section4 .top_info > .MuiAvatar-root {
+      position: absolute;
+      top: 12px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      right: 12px;
+    }
+  }
+  .incident-actions {
+    background-color: #eee;
+    margin: 0 -24px -24px;
+    padding: 10px 20px;
+    text-align: right;
+    display: block;
+  }
+  .incident-actions {
+    button,
+    button:hover {
+      background-color: #dedede;
+      border-radius: 8px;
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+    button.next-button,
+    button.next-button:hover {
+      background-color: #046c4e;
+      color: #ffffff;
+    }
+  }
+}
